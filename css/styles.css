@@ -1,0 +1,231 @@
+body {
+    font-size: 20px;
+    /* color: #ece8e7; */
+    background-color: #f2ddcc ;
+    font-family: 'Advent Pro', sans-serif;
+}
+/* Header */
+#header-nav {
+    /* background-color: #293051;
+    border-radius: 0;
+    border: 0; */
+    /* background-image: url("../images/logo.jpg");  #d2d2ba */
+    background-color: #d2d2ba ;
+    /* background-size: 100%; 
+    background-repeat: no-repeat; 
+    padding-bottom: 20%; */
+  }
+  .navbar-brand h1 { /*Name*/
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #nav-list a {
+    text-align: center;
+  }
+
+  .nav-item:hover{
+    background: #e5f8fe; 
+  }
+
+  .navbar-default .navbar-nav > .active{}
+  .navbar-default .navbar-nav > .active{
+    background: #e5f8fe; 
+  }
+  .navbar-default .navbar-nav > .active > a, 
+  .navbar-default .navbar-nav > .active > a:hover, 
+  .navbar-default .navbar-nav > .active > a:focus {
+    background: #e5f8fe; 
+  }
+  #nav-list a i {
+    font-size: 1.5em;
+    padding-bottom: 7px;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #8f1011 ;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -50px;
+  }
+  /* End Header */
+  /* Footer */
+  .panel-footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    background-color: #f2ddcc ;
+    border-top: 0;
+    line-height: .8;
+    font-size: 0.8em;
+  }
+  .panel-footer section{
+    margin-top: 5px;  
+  }
+  .panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  /* End Footer */
+  /* Home Page */
+  .special{
+    font-weight: 700;
+    margin: 25px 0px;
+    border-top: 4px;
+    border-bottom: 4px;
+    border-left: 0px;
+    border-right: 0px;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    border-style: dashed;
+    font-size: 2em;
+    color: #df7373;
+  }
+  a{
+    /* color: #fff; */
+    color: #000;
+  }
+  h1{
+    font-size: 1.8em;
+    margin: 20px;
+  }
+  .dotted{
+    border: 10px;
+    border-style: dotted;
+    border-color: #e5f8fe; 
+  }
+  /* End Home Page */
+  /* Directions Page */
+  .map{
+    width: 550px;
+    height: 450px;
+  }
+  /* End Directions Page */
+  /* RSVP Page */
+  .rsvpform{
+    width: 100%;
+    height: 100vh;
+  }
+  /*.freebirdFormviewerComponentsQuestionBaseRoot{
+    background-color: unset !important ;
+    border: 0px !important ;
+  }*/
+  /* End RSVP Page */
+  /* Gifts Page */
+  .whole{
+    min-height: 100vh;
+  }
+  /* Gifts Page */
+  /*About Page*/
+  .about-img{
+    margin-top: 35px;
+  }
+  .team-title {
+    margin: 0 0 5px;
+  }
+  .team-details {
+    font-size: .9em;
+    font-style: italic;
+  }
+  /*End About Page*/
+  /********** Large devices only **********/
+  @media (min-width: 1200px) {}
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {}
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    body{
+      font-size: 18px;
+    }
+    .navbar-nav>li>a{
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    .navbar-brand h1 { /*Name*/
+      font-size: 1.3em;
+    }
+    #nav-list a span {
+      font-size: 1.1em;
+      padding-bottom: 5px;
+    }
+  }
+  /********** Extra small devices only **********/
+  @media (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+    }
+    .navbar-brand h1 { /* Name */
+      padding-top: 10px;
+      font-size: 5vw; /* 1vw = 1% of viewport width */
+    }
+    /* End Header */
+  
+    /* Footer */
+    .panel-footer section {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+      margin-bottom: 0; /* margin already exists on the whole row */
+    }
+    .panel-footer section hr {
+      width: 50%;
+    }
+    .panel-footer div.row{
+      margin-bottom: 0px;
+    }
+    /* End Footer */
+    /*About Page*/
+    .about-img{
+      margin: auto;
+    }
+    /*End About Page*/
+    .special{
+      left: 0;
+      width: 100%;
+    }
+    #nav-list{
+    padding-top: 50%;
+  }
+  }
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+  @media (max-width: 479px) {
+    body {
+    font-size: 16px;
+    }
+    /* Header */
+    .navbar-brand h1 { /* Name */
+      padding-top: 5px;
+      font-size: 5vw;
+    }
+    /* End Header */
+    /* Home page */
+    button.navbar-toggle{
+      padding: 5px 6px;
+    }
+    #nav-list{
+    padding-top: 50%;
+  }
+    .col-xxs-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+    .map{
+      width: 100%;
+      height: 250px;
+    }
+    .special{
+      left: 0;
+      width: 100%;
+    }
+  }

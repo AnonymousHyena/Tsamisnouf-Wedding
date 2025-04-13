@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tsamisnouf Wedding</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,300,700' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <!-- As a link -->
+    <nav id="header-nav" class="navbar navbar-expand-lg">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand text-decoration-none py-auto" href="#" onclick="$cw.loadHomePage();"><h1>Tsamisnouf Wedding</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul id="nav-list" class="nav justify-content-end">
+                    <li id="navHomeButton" class="d-block d-sm-none active nav-item text-center px-2">
+                        <a href="#" class="text-decoration-none" onclick="$cw.loadHomePage();"><i class="bi-heart-fill"></i> Home</a>
+                    </li>
+                    <!-- <li id="navMenuRSVPButton" class="nav-item text-center px-2">
+                        <a href="#" class="text-decoration-none" onclick="$cw.loadRSVPPage();"><i class="bi-heart-fill"></i><br class="d-none d-sm-block"> RSVP</a>
+                    </li>
+                    <li id="navMenuDirButton" class="nav-item text-center px-2">
+                        <a href="#" class="text-decoration-none" onclick="$cw.loadDirectionsPage();"><i class="bi-heart-fill"></i><br class="d-none d-sm-block"> Get Directions</a>
+                    </li>
+                    <li id="navMenuGiftButton" class="nav-item text-center px-2">
+                        <a href="#" class="text-decoration-none" onclick="$cw.loadGiftsPage();"><i class="bi-heart-fill"></i><br class="d-none d-sm-block"> Gift Registry</a>
+                    </li>
+                    <li id="navMenuTeamButton" class="nav-item text-center px-2">
+                        <a href="#" class="text-decoration-none" onclick="$cw.loadTeamPage();"><i class="bi-heart-fill"></i><br class="d-none d-sm-block"> Meet the Team</a>
+                    </li> -->
+                    <li id="navMenuLanButton" class="nav-item text-center px-2">
+                        <a href="#" class="text-decoration-none" onclick="$cw.toggleLanguage();"><i class="bi-globe2"></i></span><br class="d-none d-sm-block"> Ελληνικά</a>
+                    </li>
+                </ul><!-- #nav-list -->
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div id="main-content" class="container"></div>
+
+  <footer class="panel-footer">
+      <div class="">
+        <section class="text-center">
+          Made with <i class="bi-heart-fill" style="color:red;font-size:0.7em;"></i> by Statics in Thessaloniki
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
