@@ -187,9 +187,6 @@ body {
       left: 0;
       width: 100%;
     }
-    #nav-list{
-    padding-top: 50%;
-  }
   }
   /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
   @media (max-width: 479px) {
@@ -206,9 +203,6 @@ body {
     button.navbar-toggle{
       padding: 5px 6px;
     }
-    #nav-list{
-    padding-top: 50%;
-  }
     .col-xxs-12 {
       position: relative;
       min-height: 1px;
