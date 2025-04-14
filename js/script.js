@@ -1,6 +1,7 @@
 (function (global) {
   var cw = {};
   var language = 0;//0 english, 1 greek
+  var secret = 0;
   var active = 0;
   var homeHtmlUrl = "snippets/home-snippet.html";
   var homeHtmlUrlGr = "snippets/home-snippet-gr.html";
@@ -203,6 +204,23 @@
     else if (active==2){cw.loadDirectionsPage();}
     else if (active==3){cw.loadGiftsPage();}
     else if (active==4){cw.loadTeamPage();}
+    };
+
+    cw.toggleSecret = function(state){
+      if (state==0){
+        if (language==1){
+          document.querySelector("#secret").innerHTML = document.querySelector("#secret").innerHTML.replace('Μικρούλης','Μίλτος');
+        } else {
+          document.querySelector("#secret-eng").innerHTML = document.querySelector("#secret-eng").innerHTML.replace('Wee Lad','Miltos');
+        }
+      }
+      else if (state==1){
+        if (language==1){
+          document.querySelector("#secret").innerHTML = document.querySelector("#secret").innerHTML.replace('Μίλτος','Μικρούλης');
+        } else {
+          document.querySelector("#secret-eng").innerHTML = document.querySelector("#secret-eng").innerHTML.replace('Miltos','Wee Lad');
+        }
+      }
     };
   
   global.$cw = cw;

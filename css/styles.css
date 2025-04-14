@@ -95,6 +95,14 @@ body {
     border-style: dotted;
     border-color: #e5f8fe; 
   }
+  #secret{
+    display: inline-block;
+    width: 140px;
+  }
+  #secret-eng{
+    display: inline-block;
+    width: 115px;
+  }
   /* End Home Page */
   /* Directions Page */
   .map{
@@ -132,7 +140,7 @@ body {
   /********** Large devices only **********/
   @media (min-width: 1200px) {}
   /********** Medium devices only **********/
-  @media (min-width: 992px) and (max-width: 1199px) {}
+  @media (min-width: 992px) and (max-width: 1199px) { }
   /********** Small devices only **********/
   @media (min-width: 768px) and (max-width: 991px) {
     body{
@@ -148,6 +156,12 @@ body {
     #nav-list a span {
       font-size: 1.1em;
       padding-bottom: 5px;
+    }
+    #secret{
+      width: 130px;
+    }
+    #secret-eng{
+      width: 105px;
     }
   }
   /********** Extra small devices only **********/
@@ -187,6 +201,12 @@ body {
       left: 0;
       width: 100%;
     }
+    #secret{
+      width: 120px;
+    }
+    #secret-eng{
+      width: 105px;
+    }
   }
   /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
   @media (max-width: 479px) {
@@ -221,5 +241,11 @@ body {
     .special{
       left: 0;
       width: 100%;
+    }
+    #secret{
+      width: 110px;
+    }
+    #secret-eng{
+      width: 95px;
     }
   }
