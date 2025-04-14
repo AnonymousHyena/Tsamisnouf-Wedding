@@ -1,5 +1,5 @@
 (function (global) {
-  var cw = {};
+  var tsw = {};
   var language = 0;//0 english, 1 greek
   var secret = 0;
   var active = 0;
@@ -89,9 +89,9 @@
     }
   };
   // On page load (before images or CSS), show home view
-  document.addEventListener("DOMContentLoaded",function(event){cw.loadHomePage();});
+  document.addEventListener("DOMContentLoaded",function(event){tsw.loadHomePage();});
   
-  cw.loadHomePage = function () {
+  tsw.loadHomePage = function () {
     showLoading("#main-content");
     switchMenuToActive(0);
     if (language==0){
@@ -105,7 +105,7 @@
       function(homeHtml){insertHtml("#main-content",homeHtml);},
       false);}
   };
-  cw.loadRSVPPage = function(){
+  tsw.loadRSVPPage = function(){
     showLoading("#main-content");
     switchMenuToActive(1);
     $ajaxUtils.sendGetRequest(
@@ -113,7 +113,7 @@
       function(rsvpHtml){insertHtml("#main-content",rsvpHtml);},
       false);
   };
-  cw.loadDirectionsPage = function(){
+  tsw.loadDirectionsPage = function(){
     showLoading("#main-content");
     switchMenuToActive(2);
     if (language == 0){
@@ -127,7 +127,7 @@
         function(directionsHtml){insertHtml("#main-content",directionsHtml);},
         false);}
   };
-  cw.loadGiftsPage = function(){
+  tsw.loadGiftsPage = function(){
     showLoading("#main-content");
     switchMenuToActive(3);
     if (language == 0){
@@ -141,7 +141,7 @@
       function(giftsHtml){insertHtml("#main-content",giftsHtml);},
       false);}
   };
-  cw.loadTeamPage = function(){
+  tsw.loadTeamPage = function(){
     showLoading("#main-content");
     switchMenuToActive(4);
     if (language == 0){
@@ -183,7 +183,7 @@
           insertHtml("#main-content",teamHtml);},
         false);}
   };
-  cw.toggleLanguage = function(){
+  tsw.toggleLanguage = function(){
     if (language==1){
       document.querySelector("#navHomeButton").innerHTML = document.querySelector("#navHomeButton").innerHTML.replace(' Αρχική',' Home');
     //   document.querySelector("#navMenuDirButton").innerHTML = document.querySelector("#navMenuDirButton").innerHTML.replace(' Πώς να έρθετε',' Get Directions');
@@ -199,14 +199,14 @@
     //   document.querySelector("#navMenuTeamButton").innerHTML = document.querySelector("#navMenuTeamButton").innerHTML.replace(' Meet the Team',' H Ομάδα');
      }
     language = 1-language;
-    if (active==0){cw.loadHomePage();}
-    else if (active==1){cw.loadRSVPPage();}
-    else if (active==2){cw.loadDirectionsPage();}
-    else if (active==3){cw.loadGiftsPage();}
-    else if (active==4){cw.loadTeamPage();}
+    if (active==0){tsw.loadHomePage();}
+    else if (active==1){tsw.loadRSVPPage();}
+    else if (active==2){tsw.loadDirectionsPage();}
+    else if (active==3){tsw.loadGiftsPage();}
+    else if (active==4){tsw.loadTeamPage();}
     };
 
-    cw.toggleSecret = function(state){
+    tsw.toggleSecret = function(state){
       if (state==0){
         if (language==1){
           document.querySelector("#secret").innerHTML = document.querySelector("#secret").innerHTML.replace('Μικρούλης','Μίλτος');
@@ -223,6 +223,6 @@
       }
     };
   
-  global.$cw = cw;
+  global.$tsw = tsw;
   
   })(window);
