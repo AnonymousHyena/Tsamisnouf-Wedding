@@ -1,6 +1,6 @@
 (function (global) {
   var tsw = {};
-  var language = 0;//0 english, 1 greek
+  var language = 1;//0 english, 1 greek
   var secret = 0;
   var active = 0;
   var homeHtmlUrl = "snippets/home-snippet.html";
@@ -52,48 +52,48 @@
   
   };
   // Remove the class 'active' from home and switch to Menu button
-  var switchMenuToActive = function (buttonIndex) {
-    // Remove 'active' from home button
-    var classes = document.querySelector("#navHomeButton").className;
-    classes = classes.replace(new RegExp("active", "g"), "");
-    document.querySelector("#navHomeButton").className = classes;
+  // var switchMenuToActive = function (buttonIndex) {
+  //   // Remove 'active' from home button
+  //   var classes = document.querySelector("#navHomeButton").className;
+  //   classes = classes.replace(new RegExp("active", "g"), "");
+  //   document.querySelector("#navHomeButton").className = classes;
   
-    // var classes = document.querySelector("#navMenuRSVPButton").className;
-    // classes = classes.replace(new RegExp("active", "g"), "");
-    // document.querySelector("#navMenuRSVPButton").className = classes;
+  //   // var classes = document.querySelector("#navMenuRSVPButton").className;
+  //   // classes = classes.replace(new RegExp("active", "g"), "");
+  //   // document.querySelector("#navMenuRSVPButton").className = classes;
   
-    // var classes = document.querySelector("#navMenuDirButton").className;
-    // classes = classes.replace(new RegExp("active", "g"), "");
-    // document.querySelector("#navMenuDirButton").className = classes;
+  //   // var classes = document.querySelector("#navMenuDirButton").className;
+  //   // classes = classes.replace(new RegExp("active", "g"), "");
+  //   // document.querySelector("#navMenuDirButton").className = classes;
   
-    // var classes = document.querySelector("#navMenuGiftButton").className;
-    // classes = classes.replace(new RegExp("active", "g"), "");
-    // document.querySelector("#navMenuGiftButton").className = classes;
+  //   // var classes = document.querySelector("#navMenuGiftButton").className;
+  //   // classes = classes.replace(new RegExp("active", "g"), "");
+  //   // document.querySelector("#navMenuGiftButton").className = classes;
   
-    // var classes = document.querySelector("#navMenuTeamButton").className;
-    // classes = classes.replace(new RegExp("active", "g"), "");
-    // document.querySelector("#navMenuTeamButton").className = classes;
+  //   // var classes = document.querySelector("#navMenuTeamButton").className;
+  //   // classes = classes.replace(new RegExp("active", "g"), "");
+  //   // document.querySelector("#navMenuTeamButton").className = classes;
   
-    var menuSelector;
-    active = buttonIndex;
-    if (buttonIndex==0){menuSelector="#navHomeButton";}
-    // else if (buttonIndex==1){menuSelector="#navMenuRSVPButton";}
-    // else if (buttonIndex==2){menuSelector="#navMenuDirButton";}
-    // else if (buttonIndex==3){menuSelector="#navMenuGiftButton";}
-    // else if (buttonIndex==4){menuSelector="#navMenuTeamButton";}
-    // Add 'active' to menu button if not already there
-    classes = document.querySelector(menuSelector).className;
-    if (classes.indexOf("active") == -1) {
-      classes += " active";
-      document.querySelector(menuSelector).className = classes;
-    }
-  };
+  //   var menuSelector;
+  //   active = buttonIndex;
+  //   if (buttonIndex==0){menuSelector="#navHomeButton";}
+  //   // else if (buttonIndex==1){menuSelector="#navMenuRSVPButton";}
+  //   // else if (buttonIndex==2){menuSelector="#navMenuDirButton";}
+  //   // else if (buttonIndex==3){menuSelector="#navMenuGiftButton";}
+  //   // else if (buttonIndex==4){menuSelector="#navMenuTeamButton";}
+  //   // Add 'active' to menu button if not already there
+  //   classes = document.querySelector(menuSelector).className;
+  //   if (classes.indexOf("active") == -1) {
+  //     classes += " active";
+  //     document.querySelector(menuSelector).className = classes;
+  //   }
+  // };
   // On page load (before images or CSS), show home view
   document.addEventListener("DOMContentLoaded",function(event){tsw.loadHomePage();});
   
   tsw.loadHomePage = function () {
     showLoading("#main-content");
-    switchMenuToActive(0);
+    // switchMenuToActive(0);
     if (language==0){
     $ajaxUtils.sendGetRequest(
       homeHtmlUrl,
@@ -107,7 +107,7 @@
   };
   tsw.loadRSVPPage = function(){
     showLoading("#main-content");
-    switchMenuToActive(1);
+    // switchMenuToActive(1);
     $ajaxUtils.sendGetRequest(
       rsvpHtmlUrl,
       function(rsvpHtml){insertHtml("#main-content",rsvpHtml);},
@@ -115,7 +115,7 @@
   };
   tsw.loadDirectionsPage = function(){
     showLoading("#main-content");
-    switchMenuToActive(2);
+    // switchMenuToActive(2);
     if (language == 0){
       $ajaxUtils.sendGetRequest(
         directionsHtmlUrl,
@@ -129,7 +129,7 @@
   };
   tsw.loadGiftsPage = function(){
     showLoading("#main-content");
-    switchMenuToActive(3);
+    // switchMenuToActive(3);
     if (language == 0){
       $ajaxUtils.sendGetRequest(
         giftsHtmlUrl,
@@ -143,7 +143,7 @@
   };
   tsw.loadTeamPage = function(){
     showLoading("#main-content");
-    switchMenuToActive(4);
+    // switchMenuToActive(4);
     if (language == 0){
       $ajaxUtils.sendGetRequest(
         teamHtmlUrl,

@@ -216,9 +216,9 @@ body {
     /* Header */
     .navbar-brand h1 { /* Name */
       padding-top: 5px;
-      font-size: 5vw;
+      font-size: 7vw;
     }
-    /* End Header */
+    /* End Header *
     /* Home page */
     button.navbar-toggle{
       padding: 5px 6px;
