@@ -1,24 +1,31 @@
 body {
     font-size: 20px;
     /* color: #ece8e7; */
-    background-color: #f2ddcc ;
+    background-color: #d0d0ba ;
     font-family: 'Advent Pro', sans-serif;
 }
+.hurricane-regular {
+    font-family: "Hurricane", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+  }
+  
 /* Header */
 #header-nav {
     /* background-color: #293051;
     border-radius: 0;
     border: 0; */
     /* background-image: url("../images/logo.jpg");  #d2d2ba */
-    background-color: #d2d2ba ;
+    background-color: #d0d0ba ;
     /* background-size: 100%; 
     background-repeat: no-repeat; 
     padding-bottom: 20%; */
   }
   .navbar-brand h1 { /*Name*/
-    font-size: 1.8em;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 2.0em;
+    /* text-transform: uppercase; */
+    /* font-weight: bold; */
   }
 
   #nav-list a {
@@ -53,7 +60,7 @@ body {
   .panel-footer {
     margin-top: 30px;
     padding-top: 30px;
-    padding-bottom: 5px;
+    padding-bottom: 30px;
     background-color: #f2ddcc ;
     border-top: 0;
     line-height: .8;
@@ -75,8 +82,8 @@ body {
     border-left: 0px;
     border-right: 0px;
     position: relative;
-    left: 25%;
-    width: 50%;
+    left: 10%;
+    width: 80%;
     border-style: dashed;
     font-size: 2em;
     color: #df7373;
@@ -248,3 +255,29 @@ body {
       width: 95px;
     }
   }
+
+
+/* Text Animation */ 
+.text-shine {
+    background: linear-gradient(
+        to right,
+        #000000 20%,
+        #838c8b 30%,
+        #697271 70%,
+        #000000 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+  @keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
