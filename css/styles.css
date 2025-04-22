@@ -66,9 +66,6 @@ body {
     line-height: .8;
     font-size: 0.8em;
   }
-  .panel-footer section{
-    margin-top: 5px;  
-  }
   .panel-footer div.row {
     margin-bottom: 35px;
   }
@@ -173,19 +170,13 @@ body {
   /********** Extra small devices only **********/
   @media (max-width: 767px) {
     /* Header */
-    .navbar-brand {
-      padding-top: 10px;
-      height: 80px;
-    }
     .navbar-brand h1 { /* Name */
-      padding-top: 10px;
       font-size: 5vw; /* 1vw = 1% of viewport width */
     }
     /* End Header */
   
     /* Footer */
     .panel-footer section {
-      margin-bottom: 30px;
       text-align: center;
     }
     .panel-footer section:nth-child(3) {
@@ -221,7 +212,6 @@ body {
     }
     /* Header */
     .navbar-brand h1 { /* Name */
-      padding-top: 5px;
       font-size: 7vw;
     }
     /* End Header *
