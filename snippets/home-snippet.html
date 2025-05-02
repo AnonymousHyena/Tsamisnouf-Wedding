@@ -4,15 +4,21 @@
     </div>
 
     <div class="col-12 col-md-6 col-lg-6 text-center">
-        <h1 class="text-center">
-            Giorgos, 
-            Maria & 
-            Wee Lad
-            <!-- <div id="secret-eng" onmouseenter="$tsw.toggleSecret(0);" onmouseleave="$tsw.toggleSecret(1);" class="text-start">Little Guy</div> -->
+        <h1 class="text-center" data-i18n-key="homeSnippet.main">
+            Γιώργος, 
+            Μαρία & 
+            Μικρούλης
+            <!-- <div id="secret" onmouseenter="$tsw.toggleSecret(0);" onmouseleave="$tsw.toggleSecret(1);" class="text-start">Μικρούλης</div> -->
         </h1>
-        
-        <h2 class="text-center hurricane-regular text-shine">Save the Date</h2>
+
+        <h2 class="text-center hurricane-regular text-shine" data-i18n-key="homeSnippet.saveDate">Save the Date </h2>
+        <button type="button" class="btn btn-outline-secondary" onclick="$tsw.openLink('https://calendar.app.google/8BKNzTHtFC9vctkZA');">
+            <span class="bi bi-calendar-event"></span>
+            <span data-i18n-key="homeSnippet.addToCalendar">Προσθήκη στο Ημερολόγιο</span>
+        </button>
     
-        <div class="text-center special">Sunday, 29 June 2025</div>
+        <div class="text-center special" data-i18n-key="homeSnippet.date">Κυριακή, 29 Ιουνίου 2025</div>
+
+        <h2 class="text-center" data-i18n-key="homeSnippet.moreInfo">Σύντομα περισσότερες πληροφορίες...</h2>
     </div>
 </div>
