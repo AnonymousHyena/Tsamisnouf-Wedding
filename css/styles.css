@@ -143,11 +143,24 @@ body {
   /********** Large devices only **********/
   @media (min-width: 1200px) {}
   /********** Medium devices only **********/
-  @media (min-width: 992px) and (max-width: 1199px) { }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    h2{
+      font-size: 1.1em;
+    }
+    h4{
+      font-size: 1em;
+    }
+    .special{
+      font-size: 1.4em;
+    }
+    .hurricane-regular{
+      font-size: 3em;
+    }
+   }
   /********** Small devices only **********/
   @media (min-width: 768px) and (max-width: 991px) {
     body{
-      font-size: 18px;
+      font-size: 16px;
     }
     .navbar-nav>li>a{
       padding-right: 8px;
@@ -165,6 +178,20 @@ body {
     }
     #secret-eng{
       width: 105px;
+    }
+    h2{
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    .special{
+      font-size: 1.4em;
+      margin: 15px 0px;
+    }
+    .hurricane-regular{
+      font-size: 2.8em;
+    }
+    h4{
+      font-size: 0.9em;
     }
   }
   /********** Extra small devices only **********/
@@ -243,6 +270,12 @@ body {
     }
     #secret-eng{
       width: 95px;
+    }
+    h2{
+      font-size: 1.4em;
+    }
+    h4{
+      font-size: 1.2em;
     }
   }
 

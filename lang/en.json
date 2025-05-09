@@ -2,9 +2,16 @@
     "homeSnippet": {
         "main": "Giorgos, Maria & Little One",
         "saveDate": "Save the Date",
-        "date": "Sunday, June 29, 2025",
+        "date": "Sunday, June 29, 2025 at 17:30",
         "moreInfo": "More info coming soon...",
-        "addToCalendar": "Add to Calendar"
+        "addToCalendar": "Add to Calendar",
+        "church": "We are wating for you at the Holy Church of Saints Cyril and Methodius, Leof. Meg. Alexandrou 33, 54641 Thessaloniki.",
+        "venue": "After the ceremony you are all invited to our party at the Equestrian Club of Northern Greece."
+    },
+    "gift":{
+        "title":"Send a Gift",
+        "line1":"Your presence on this important day is the most beautiful gift for us.",
+        "line2":"However, since many of you have asked and wish to contribute to our new beginning as a family, we have created a joint bank account."
     },
     "index": {
         "title": "Wedding, Baptism & Party!",

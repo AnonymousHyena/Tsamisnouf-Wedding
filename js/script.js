@@ -188,7 +188,7 @@
     };
     tsw.toggleLanguage = function () {
         // Print all document elements with the data-i18n-key attribute
-        console.log(document.querySelectorAll("[data-i18n-key]"));
+        // console.log(document.querySelectorAll("[data-i18n-key]"));
 
         if (language == 1) lang = "en";
         else lang = "el";
@@ -203,7 +203,7 @@
                     const key = element.getAttribute("data-i18n-key");
                     // Split the key into parts
                     const keys = key.split(".");
-                    console.log(keys);
+                    // console.log(keys);
                     let text = data;
                     // Traverse the JSON object using the keys
                     for (const k of keys) {
