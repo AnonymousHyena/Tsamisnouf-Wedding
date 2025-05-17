@@ -5,8 +5,12 @@
         "date": "Sunday, June 29, 2025 at 17:30",
         "moreInfo": "More info coming soon...",
         "addToCalendar": "Add to Calendar",
-        "church": "We are wating for you at the Holy Church of Saints Cyril and Methodius, Leof. Meg. Alexandrou 33, 54641 Thessaloniki.",
-        "venue": "After the ceremony you are all invited to our party at the Equestrian Club of Northern Greece."
+        "church1": "We are wating for you at the ",
+        "church2": "Holy Church of Saints Cyril and Methodius.",
+        "venue1": "After the ceremony you are all invited to our party at the ",
+        "venue2": "Equestrian Club of Northern Greece.",
+        "dateDay": "Sunday",
+        "dateMonth": "June"
     },
     "gift":{
         "title":"Send a Gift",

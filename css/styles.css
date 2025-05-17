@@ -1,16 +1,26 @@
 body {
-    font-size: 20px;
-    /* color: #ece8e7; */
+    font-size: 16px;
+    color: #5A6766;
     background-color: #d0d0ba ;
-    font-family: 'Advent Pro', sans-serif;
+    /* font-family: 'Advent Pro', sans-serif; */
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 .hurricane-regular {
     font-family: "Hurricane", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 3.5em;
-  }
-  
+}
+.roboto-slab-400 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Header */
 #header-nav {
     /* background-color: #293051;
@@ -24,6 +34,8 @@ body {
   }
   .navbar-brand h1 { /*Name*/
     font-size: 2.0em;
+    font-weight: 400;
+    color: #5A6766;
     /* text-transform: uppercase; */
     /* font-weight: bold; */
   }
@@ -72,8 +84,8 @@ body {
   /* End Footer */
   /* Home Page */
   .special{
-    font-weight: 700;
-    margin: 25px 0px;
+    font-weight: 400;
+    margin: 40px 0px;
     border-top: 4px;
     border-bottom: 4px;
     border-left: 0px;
@@ -81,17 +93,30 @@ body {
     position: relative;
     left: 10%;
     width: 80%;
-    border-style: dashed;
+    border-style: solid;
     font-size: 2em;
-    color: #df7373;
+    color: #AC594C;
   }
   a{
     /* color: #fff; */
-    color: #000;
+    color: #5A6766;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
   }
   h1{
-    font-size: 1.8em;
+    font-size: 2em;
     margin: 20px;
+    font-weight: 300;
+  }
+  h2{
+    font-size: 1.5em;
+    margin: 20px;
+    font-weight: 300;
+  }
+  h4{
+    font-size: 1.0em;
+    margin: 20px;
+    font-weight: 300;
   }
   .dotted{
     border: 10px;
@@ -106,6 +131,50 @@ body {
     display: inline-block;
     width: 115px;
   }
+  .date-container {
+            display: flex;
+            align-items: center; /* Vertically align items in the flex container */
+            text-align: center;
+            color: #a05252; /* Text color from the image */
+            /* padding: 2rem; Add some padding */
+            border-radius: 0.5rem; /* Add rounded corners */
+            width: 100%; /* Make the container fill the width of its parent */
+            /* max-width: 800px; Optional: Set a max-width for larger screens */
+            justify-content: center; /* Center the content horizontally */
+        }
+        .divider-line {
+            flex-grow: 1; /* Allow the line to grow and take available space */
+            height: 2px;
+            background-color: #a05252; /* Line color from the image */
+            margin: 0 1rem; /* Space around the lines */
+            min-width: 50px; /* Ensure lines have a minimum width */
+            width: 100%; /* Make the lines fill the available space */
+        }
+        .day-number {
+            font-size: 6rem; /* Large font size for the day number */
+            font-weight: bold;
+            line-height: 1; /* Adjust line height */
+            margin: 0 1rem; /* Space around the day number */
+        }
+        .text-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+        .text-column div {
+            margin: 0.25rem 0; /* Space between lines in the text columns */
+        }
+        .small-text {
+            font-size: 2rem; /* Smaller text for time and year */
+        }
+        .center-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+
+        }
   /* End Home Page */
   /* Directions Page */
   .map{
@@ -231,6 +300,12 @@ body {
     #secret-eng{
       width: 105px;
     }
+    /* .date-container .day-number {
+      font-size: 2.5em;
+    }
+    .date-container .small-text {
+      font-size: 1em;
+    } */
   }
   /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
   @media (max-width: 479px) {
@@ -277,6 +352,12 @@ body {
     h4{
       font-size: 1.2em;
     }
+    .date-container .day-number {
+      font-size: 1.5em;
+    }
+    .date-container .small-text {
+      font-size: 0.85em;
+    }
   }
 
 
@@ -284,10 +365,10 @@ body {
 .text-shine {
     background: linear-gradient(
         to right,
-        #000000 20%,
-        #838c8b 30%,
+        #5A6766 20%,
+        #AC594C 30%,
         #697271 70%,
-        #000000 80%
+        #5A6766 80%
     );
     -webkit-background-clip: text;
     background-clip: text;

@@ -1,33 +1,69 @@
 <div class="row">
-    <div class="text-center col-12 col-md-6 col-lg-6">
+    <div class="text-center col-12 col-md-5 col-lg-5">
         <img class="dotted img-fluid" src="images/Family portrait full size.jpg">
     </div>
 
-    <div class="col-12 col-md-6 col-lg-6 text-center">
-        <h1 class="text-center m-sm-1 m-lg-2 m-xl-3" data-i18n-key="homeSnippet.main">
+    <div class="col-12 col-md-7 col-lg-7 text-center">
+        <h1 class="text-center m-sm-1 m-lg-2 m-xl-3" style="font-weight: 400;" data-i18n-key="homeSnippet.main">
             Γιώργος, 
             Μαρία & 
             Μικρούλης
             <!-- <div id="secret" onmouseenter="$tsw.toggleSecret(0);" onmouseleave="$tsw.toggleSecret(1);" class="text-start">Μικρούλης</div> -->
         </h1>
 
+        <!-- <div class="text-center special" data-i18n-key="homeSnippet.date">Κυριακή, 29 Ιουνίου 2025 στις 17:30</div> -->
         <h2 class="text-center hurricane-regular text-shine" data-i18n-key="homeSnippet.saveDate">Save the Date </h2>
+
+
+        <div class="date-container">
+            <div class="text-column">
+                <div class="small-text invisible">Placeholder</div> <div class="divider-line"></div>
+                <div class="small-text" data-i18n-key="homeSnippet.dateDay">Κυριακή</div>
+                <div class="divider-line"></div>
+                <div class="small-text invisible">Placeholder</div> </div>
+
+            <div class="center-column">
+                <div class="small-text">17:30</div>
+                <div class="day-number">29</div>
+                <div class="small-text">2025</div>
+            </div>
+
+            <div class="text-column">
+                <div class="small-text invisible">Placeholder</div> <div class="divider-line"></div>
+                <div class="small-text" data-i18n-key="homeSnippet.dateMonth">Ιουνίου</div>
+                <div class="divider-line"></div>
+                <div class="small-text invisible">Placeholder</div> </div>
+        </div>
+
+        <!-- <div class="row text-center">
+            <div class="col-6">
+            <h2 class="text-center hurricane-regular text-shine" data-i18n-key="homeSnippet.saveDate">Save the Date </h2>
+            </div>
+            <div class="col-6">
+            </div>
+        </div> -->
+        
         <button type="button" class="btn btn-outline-secondary m-xl-2" onclick="$tsw.openLink('https://calendar.app.google/8BKNzTHtFC9vctkZA');">
             <span class="bi bi-calendar-event"></span>
             <span data-i18n-key="homeSnippet.addToCalendar">Προσθήκη στο Ημερολόγιο</span>
         </button>
-    
-        <div class="text-center special" data-i18n-key="homeSnippet.date">Κυριακή, 29 Ιουνίου 2025 στις 17:30</div>
 
-        <h2 class="text-center mb-xl-4" data-i18n-key="homeSnippet.church">Σας περιμένουμε στον Ιερό Ναό Αγίων Κυρίλλου και Μεθοδίου, Λεωφ. Μεγ. Αλεξάνδρου 33.</h2>
-        <h2 class="text-center" data-i18n-key="homeSnippet.venue">Μετά την τελετή είστε όλοι προσκεκλημένοι στο πάρτυ μας στον Ιππικό Όμιλο Βορείου Ελλάδος.</h2>
+        <h2 class="text-center mb-xl-4">
+            <span data-i18n-key="homeSnippet.church1">Σας περιμένουμε στον </span>
+            <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/6QRSLas2dc5ZddYm9" data-i18n-key="homeSnippet.church2">Ιερό Ναό Αγίων Κυρίλλου και Μεθοδίου.</a>
+        </h2>
+        
+        <h2 class="text-center">
+            <span data-i18n-key="homeSnippet.venue1">Μετά την τελετή είστε όλοι προσκεκλημένοι στο πάρτυ μας στον </span>
+            <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/qkN1SGUSqGCEfWne7" data-i18n-key="homeSnippet.venue2">Ιππικό Όμιλο Βορείου Ελλάδος.</a>
+        </h2> 
     </div>
     <hr class="d-block d-sm-none mt-3">
     <div class="col-12 text-center mt-3">
         <h2 class="text-center mb-3 mb-sm-2" data-i18n-key="gift.title">Δωράκι Γάμου/Βάφτισης</h2>
         <h4 class="text-center m-0" data-i18n-key="gift.line1">Η παρουσία σας σε αυτή τη σημαντική μέρα είναι το πιο όμορφο δώρο για εμάς.</h4>
-        <h4 class="text-center mb-4 mb-sm-2" data-i18n-key="gift.line2">Επειδή όμως πολλοί ρωτάτε και θέλετε να συνεισφέρετε στη νέα μας αρχή ως οικογένεια,  έχουμε δημιουργήσει έναν κοινό τραπεζικό λογαριασμό.</h4>
-        <h4 class="text-center">IBAN: GR51 0140 7070 7070 0231 0033 088 (Alpha Bank)</h4>
-        <h4 class="text-center">IRIS: +30 697 616 2949</h4>
+        <h4 class="text-center mt-0 mb-4 mb-sm-2" data-i18n-key="gift.line2">Επειδή όμως πολλοί ρωτάτε και θέλετε να συνεισφέρετε στη νέα μας αρχή ως οικογένεια, έχουμε δημιουργήσει έναν κοινό τραπεζικό λογαριασμό.</h4>
+        <h4 class="text-center mb-0">IBAN: GR51 0140 7070 7070 0231 0033 088 (Alpha Bank)</h4>
+        <h4 class="text-center mt-0">IRIS: +30 697 616 2949</h4>
     </div>
 </div>
