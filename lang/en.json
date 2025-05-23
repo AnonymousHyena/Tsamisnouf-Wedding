@@ -10,7 +10,8 @@
         "venue1": "After the ceremony you are all invited to our party at the ",
         "venue2": "Equestrian Club of Northern Greece.",
         "dateDay": "Sunday",
-        "dateMonth": "June"
+        "dateMonth": "June",
+        "rsvpDL": "Please let us know if you can make it by June 10."
     },
     "gift":{
         "title":"Send a Gift",
